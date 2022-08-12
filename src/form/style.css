@@ -1,0 +1,37 @@
+.add-form {
+  margin: 1rem;
+  border-radius: 5px;
+  border: 2px solid #0e63da;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-label {
+  color: #0e63da;
+  font-weight: 700;
+}
+
+.add-input {
+  width: 250px;
+  border: 1px solid #0e63da;
+  border-radius: 8px;
+  height: 40px;
+  padding: 0 8px;
+}
+
+.add-button {
+  border: 1px solid #0e63da;
+  padding: 1rem;
+  border-radius: 16px;
+  color: white;
+  background-color: #0e63da;
+}

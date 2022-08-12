@@ -1,0 +1,39 @@
+.todo-container {
+  width: 300px;
+  border: 2px solid #0e63da;
+  padding: 12px 24px;
+  border-radius: 16px;
+  margin: 16px 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-todo {
+  padding: 8px;
+  border-radius: 8px;
+  margin: 0 8px;
+  width: 100px;
+  color: white;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.delete {
+  border: 2px solid red;
+  background-color: red;
+}
+
+.delete > :hover {
+  border: 2px solid red;
+  background-color: red;
+}
+
+.complete {
+  border: 2px solid green;
+  background-color: green;
+}

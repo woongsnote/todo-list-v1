@@ -1,0 +1,14 @@
+.list-container {
+  margin: 20px;
+}
+
+.list-header {
+  padding-bottom: 12px;
+  border-bottom: 1px solid slateblue;
+}
+
+.list-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
