@@ -2,7 +2,7 @@ import Todo from "../todo/Todo";
 import "./style.css";
 import { FaRegCheckSquare, FaTasks } from "react-icons/fa";
 
-const List = ({ todos, setTodos }) => {
+function List({ todos, setTodos }) {
   //delet todo
   const onDeleteHandler = (todoId) => {
     const newTodos = todos.filter((todo) => {
@@ -32,7 +32,7 @@ const List = ({ todos, setTodos }) => {
     <div className="list-container">
       <div className="list-box">
         <h2 className="list-header">
-          <FaTasks size="32" /> To Do
+          <FaTasks size="32" /> Working
         </h2>
         <div className="todo-box">
           {todos.map((todo) => {
@@ -77,6 +77,6 @@ const List = ({ todos, setTodos }) => {
       </div>
     </div>
   );
-};
+}
 
 export default List;

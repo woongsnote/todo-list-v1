@@ -33,8 +33,10 @@
   padding: 1rem;
   border-radius: 16px;
   background-color: white;
+  color: #0e63da;
 }
 .add-button:hover {
   cursor: pointer;
   background-color: #0e63da;
+  color: white;
 }

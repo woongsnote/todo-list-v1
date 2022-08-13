@@ -1,6 +1,6 @@
 import "./style.css";
-import { FaTrash, FaCheck, FaRedo } from "react-icons/fa";
-const Todo = ({ todo, onDeleteHandler, onEditHandler }) => {
+
+function Todo({ todo, onDeleteHandler, onEditHandler }) {
   return (
     <div className="todo-container">
       <div>
@@ -11,17 +11,17 @@ const Todo = ({ todo, onDeleteHandler, onEditHandler }) => {
         <button
           className=" button-todo delete"
           onClick={() => onDeleteHandler(todo.id)}>
-          <FaTrash size="20" />
+          삭제하기
         </button>
         {/* 상태에 따른 텍스트 구분 */}
         <button
           className="button-todo complete"
           onClick={() => onEditHandler(todo.id)}>
-          {todo.isDone ? <FaRedo size="20" /> : <FaCheck size="20" />}
+          {todo.isDone ? "취소" : "완료"}
         </button>
       </div>
     </div>
   );
-};
+}
 
 export default Todo;

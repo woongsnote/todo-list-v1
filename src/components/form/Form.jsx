@@ -1,7 +1,8 @@
 import "./style.css";
 import { useState } from "react";
-import { FaSave } from "react-icons/fa";
+
 let number = 3;
+
 function Form({ setTodos, todos }) {
   const initialState = { id: 0, title: "", desc: "", isDone: false };
 
@@ -43,9 +44,7 @@ function Form({ setTodos, todos }) {
         />
       </div>
 
-      <button className="add-button">
-        <FaSave color="#0e63da" size="24" />
-      </button>
+      <button className="add-button">저장하기</button>
     </form>
   );
 }
