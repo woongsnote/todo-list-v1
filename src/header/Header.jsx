@@ -3,8 +3,8 @@ import "./style.css";
 const Header = () => {
   return (
     <div className="container">
-      <div>My Todo List</div>
-      <div>React</div>
+      <h2>My Todo List</h2>
+      <h2>React</h2>
     </div>
   );
 };

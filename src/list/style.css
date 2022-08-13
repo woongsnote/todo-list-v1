@@ -1,14 +1,28 @@
 .list-container {
   margin: 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .list-header {
+  display: flex;
+  align-items: center;
   padding-bottom: 12px;
   border-bottom: 1px solid slateblue;
 }
 
 .list-box {
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
-  gap: 12px;
+  flex-direction: column;
+  padding: 0 4px;
+}
+
+.todo-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }

@@ -1,7 +1,9 @@
 import Todo from "../todo/Todo";
 import "./style.css";
+import { FaRegCheckSquare, FaTasks } from "react-icons/fa";
 
 const List = ({ todos, setTodos }) => {
+  //delet todo
   const onDeleteHandler = (todoId) => {
     const newTodos = todos.filter((todo) => {
       return todo.id !== todoId;
@@ -10,6 +12,7 @@ const List = ({ todos, setTodos }) => {
     setTodos(newTodos);
   };
 
+  //change todo state
   const onEditHandler = (todoId) => {
     const newTodos = todos.map((todo) => {
       if (todo.id === todoId) {
@@ -27,42 +30,50 @@ const List = ({ todos, setTodos }) => {
 
   return (
     <div className="list-container">
-      <h2 className="list-header">Working.. 🔥</h2>
       <div className="list-box">
-        {todos.map((todo) => {
-          if (!todo.isDone) {
-            return (
-              <Todo
-                todo={todo}
-                key={todo.id}
-                setTodos={setTodos}
-                onDeleteHandler={onDeleteHandler}
-                onEditHandler={onEditHandler}
-              />
-            );
-          } else {
-            return null;
-          }
-        })}
+        <h2 className="list-header">
+          <FaTasks size="32" /> To Do
+        </h2>
+        <div className="todo-box">
+          {todos.map((todo) => {
+            if (!todo.isDone) {
+              return (
+                <Todo
+                  todo={todo}
+                  key={todo.id}
+                  setTodos={setTodos}
+                  onDeleteHandler={onDeleteHandler}
+                  onEditHandler={onEditHandler}
+                />
+              );
+            } else {
+              return null;
+            }
+          })}
+        </div>
       </div>
 
-      <h2 className="list-header">Done.. 🎉</h2>
       <div className="list-box">
-        {todos.map((todo) => {
-          if (todo.isDone) {
-            return (
-              <Todo
-                todo={todo}
-                key={todo.id}
-                setTodos={setTodos}
-                onDeleteHandler={onDeleteHandler}
-                onEditHandler={onEditHandler}
-              />
-            );
-          } else {
-            return null;
-          }
-        })}
+        <h2 className="list-header" style={{ color: "green" }}>
+          <FaRegCheckSquare color="#008000" size="32" /> Done
+        </h2>
+        <div className="todo-box">
+          {todos.map((todo) => {
+            if (todo.isDone) {
+              return (
+                <Todo
+                  todo={todo}
+                  key={todo.id}
+                  setTodos={setTodos}
+                  onDeleteHandler={onDeleteHandler}
+                  onEditHandler={onEditHandler}
+                />
+              );
+            } else {
+              return null;
+            }
+          })}
+        </div>
       </div>
     </div>
   );
