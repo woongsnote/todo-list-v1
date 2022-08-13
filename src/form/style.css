@@ -29,9 +29,12 @@
 }
 
 .add-button {
-  border: 1px solid #0e63da;
+  border: 2px solid #0e63da;
   padding: 1rem;
   border-radius: 16px;
-  color: white;
+  background-color: white;
+}
+.add-button:hover {
+  cursor: pointer;
   background-color: #0e63da;
 }
