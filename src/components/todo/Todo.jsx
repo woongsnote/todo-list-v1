@@ -5,7 +5,7 @@ function Todo({ todo, onDeleteHandler, onEditHandler }) {
     <div className="todo-container">
       <div>
         <h3>{todo.title}</h3>
-        <p>{todo.desc}</p>
+        <p>{todo.content}</p>
       </div>
       <div className="button-container">
         <button

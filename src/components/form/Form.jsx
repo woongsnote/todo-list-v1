@@ -4,7 +4,7 @@ import { useState } from "react";
 let number = 3;
 
 function Form({ setTodos, todos }) {
-  const initialState = { id: 0, title: "", desc: "", isDone: false };
+  const initialState = { id: 0, title: "", content: "", isDone: false };
 
   const [todo, setTodo] = useState(initialState);
 
@@ -15,7 +15,7 @@ function Form({ setTodos, todos }) {
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    if (todo.title.trim() === "" || todo.desc.trim() === "") return;
+    if (todo.title.trim() === "" || todo.content.trim() === "") return;
     setTodos([...todos, { ...todo, id: number }]);
     setTodo(initialState);
     number++;
@@ -35,10 +35,10 @@ function Form({ setTodos, todos }) {
         />
         <label className="form-label">내용</label>
         <input
-          name="desc"
+          name="content"
           type="text"
           className="add-input"
-          value={todo.desc}
+          value={todo.content}
           onChange={onChangeHandler}
           required
         />
