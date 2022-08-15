@@ -1,6 +1,5 @@
 import Todo from "../todo/Todo";
 import "./style.css";
-import { FaRegCheckSquare, FaTasks } from "react-icons/fa";
 
 function List({ todos, setTodos }) {
   //delet todo
@@ -31,9 +30,7 @@ function List({ todos, setTodos }) {
   return (
     <div className="list-container">
       <div className="list-box">
-        <h2 className="list-header">
-          <FaTasks size="32" /> Working
-        </h2>
+        <h2 className="list-header">📝 Working</h2>
         <div className="todo-box">
           {todos.map((todo) => {
             if (!todo.isDone) {
@@ -54,9 +51,7 @@ function List({ todos, setTodos }) {
       </div>
 
       <div className="list-box">
-        <h2 className="list-header" style={{ color: "green" }}>
-          <FaRegCheckSquare color="#008000" size="32" /> Done
-        </h2>
+        <h2 className="list-header">✅ Done</h2>
         <div className="todo-box">
           {todos.map((todo) => {
             if (todo.isDone) {
