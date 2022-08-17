@@ -14,6 +14,9 @@
 
 5. 아래 이미지의 폴더 구조와 동일하게 구현하고 컴포넌트 구성도 똑같이 나눠서 구현해주세요.
 
-### 미리보기
+![image](https://user-images.githubusercontent.com/83802168/185139369-6548ed6d-59d4-4229-b06f-2e30edc0041e.png)
+
+
+### 프로젝트 구현 결과
 
 ![image](https://user-images.githubusercontent.com/83802168/185133701-e53eeb7d-1339-4e5c-b250-9225d46580cf.png)
