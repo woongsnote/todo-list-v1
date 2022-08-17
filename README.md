@@ -2,4 +2,6 @@
 
 ## 이노베이션캠프 2주차 React project
 
-![image](https://user-images.githubusercontent.com/83802168/185133181-ed3d3561-717d-4982-a2d7-420830dea9fd.png)
+## Screenshot
+![image](https://user-images.githubusercontent.com/83802168/185133701-e53eeb7d-1339-4e5c-b250-9225d46580cf.png)
+
