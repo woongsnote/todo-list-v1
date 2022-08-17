@@ -1,5 +1,5 @@
 .list-container {
-  margin: 20px;
+  margin: 1rem;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -8,8 +8,8 @@
 .list-header {
   display: flex;
   align-items: center;
-  padding-bottom: 12px;
-  border-bottom: 1px solid slateblue;
+  padding: 0.5rem;
+  border-bottom: 2px solid #0e7bdab0;
 }
 
 .list-box {
@@ -17,11 +17,12 @@
   flex: 1;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 0 4px;
 }
 
 .todo-box {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  /* border: 2px solid gray; */
+  min-height: 100px;
 }

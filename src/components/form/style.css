@@ -1,7 +1,7 @@
 .add-form {
   margin: 1rem;
   border-radius: 5px;
-  border: 2px solid #0e63da;
+  border: 2px solid #0e7bdab0;
   padding: 1.2rem;
   display: flex;
   justify-content: space-between;
@@ -22,14 +22,14 @@
 
 .add-input {
   width: 250px;
-  border: 1px solid #0e63da;
+  border: 1px solid #0e7bdab0;
   border-radius: 8px;
   height: 40px;
   padding: 0 8px;
 }
 
 .add-button {
-  border: 2px solid #0e63da;
+  border: 2px solid #0e7bdab0;
   padding: 1rem;
   border-radius: 16px;
   background-color: white;
@@ -37,6 +37,7 @@
 }
 .add-button:hover {
   cursor: pointer;
-  background-color: #0e63da;
+  background-color: #0e7bdab0;
   color: white;
+  border: 2px solid white;
 }

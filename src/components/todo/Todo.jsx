@@ -1,6 +1,6 @@
 import "./style.css";
 
-function Todo({ todo, onDeleteHandler, onEditHandler }) {
+const Todo = ({ todo, onDeleteHandler, onEditHandler }) => {
   return (
     <div className="todo-container">
       <div>
@@ -22,6 +22,6 @@ function Todo({ todo, onDeleteHandler, onEditHandler }) {
       </div>
     </div>
   );
-}
+};
 
 export default Todo;
